@@ -1,18 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import Hero from "@/components/hero"
-import Invitation from "@/components/invitation"
-import EventDetails from "@/components/event-details"
-import RSVPForm from "@/components/rsvp-form"
-import Gallery from "@/components/gallery"
-import Navigation from "@/components/navigation"
+import Navigation from "./components/Navigation"
+import Hero from "./components/Hero"
+import Invitation from "./components/Invitation"
+import EventDetails from "./components/EventDetails"
+import RSVPForm from "./components/RSVPForm"
+import Gallery from "./components/Gallery"
 
-export default function Home() {
+export default function App() {
   const [activeSection, setActiveSection] = useState("home")
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-[#f5f1e8] text-[#5c3d3d]">
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
 
       {activeSection === "home" && <Hero setActiveSection={setActiveSection} />}
