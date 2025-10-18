@@ -1,63 +1,66 @@
-"use client"
-
 export default function Invitation() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-32 pb-20 px-4 bg-background">
-      <div className="max-w-3xl w-full">
-        {/* Ornate Card */}
-        <div className="ornate-border p-12 aged-paper animate-fade-in-scale">
-          {/* Header Decorations */}
-          <div className="text-center mb-8">
-            <div className="text-3xl text-accent mb-4">✦</div>
-            <h2 className="vintage-heading text-2xl mb-2">Together with their parents</h2>
-            <p className="text-sm text-foreground/70">request the honour of your presence</p>
-          </div>
+    <section className="min-h-screen flex items-center justify-center py-10 px-2 bg-[#f5f1e8]">
+      <div className="w-full max-w-3xl">
+        <div className="relative border-4 border-[#8b4a4a] p-6 sm:p-12 bg-gradient-to-br from-[#faf8f3] to-[#f5f1e8] shadow-2xl animate-fade-in-scale rounded-md">
+          {/* Corner Decorations */}
+          <div className="absolute top-0 left-0 w-5 h-5 sm:w-8 sm:h-8 border-t-4 border-l-4 border-[#8b4a4a] -translate-x-2 -translate-y-2"></div>
+          <div className="absolute top-0 right-0 w-5 h-5 sm:w-8 sm:h-8 border-t-4 border-r-4 border-[#8b4a4a] translate-x-2 -translate-y-2"></div>
+          <div className="absolute bottom-0 left-0 w-5 h-5 sm:w-8 sm:h-8 border-b-4 border-l-4 border-[#8b4a4a] -translate-x-2 translate-y-2"></div>
+          <div className="absolute bottom-0 right-0 w-5 h-5 sm:w-8 sm:h-8 border-b-4 border-r-4 border-[#8b4a4a] translate-x-2 translate-y-2"></div>
 
-          <div className="floral-divider my-8"></div>
-
-          {/* Main Content */}
-          <div className="text-center space-y-6 my-12">
-            <p className="text-lg font-serif">
-              <span className="text-2xl text-accent">Sarah Elizabeth</span>
-              <br />
-              <span className="text-sm text-foreground/70">and</span>
-              <br />
-              <span className="text-2xl text-accent">James Michael</span>
-            </p>
-
-            <p className="text-sm text-foreground/70 leading-relaxed">
-              request the honour of your presence
-              <br />
-              at the marriage of
-            </p>
-
-            <p className="text-lg font-serif text-accent">
-              Saturday, the fifteenth of June
-              <br />
-              Two thousand twenty-four
-              <br />
-              at half past six in the evening
-            </p>
-
-            <p className="text-sm text-foreground/70">
-              The Grand Ballroom
-              <br />
-              Downtown Convention Center
-              <br />
-              City, State 12345
+          {/* Header */}
+          <div className="text-center mb-6">
+            <div className="text-xl sm:text-3xl text-[#8b4a4a] mb-2">✦</div>
+            <h2 className="text-lg sm:text-2xl text-[#8b4a4a] tracking-widest uppercase font-light mb-1">
+              Wedding Invitation
+            </h2>
+            <p className="text-xs sm:text-sm text-[#5c3d3d]/70">
+              Together with their families
             </p>
           </div>
 
-          <div className="floral-divider my-8"></div>
+          <div className="h-px bg-gradient-to-r from-transparent via-[#8b4a4a] to-transparent my-6"></div>
+
+          {/* Couple */}
+          <div className="text-center space-y-4 my-8">
+            <p className="text-base sm:text-lg font-serif">
+              <span className="block text-xl sm:text-2xl text-[#8b4a4a]">Chi. La. Sow. Jabili (Archana)</span>
+              <span className="block text-sm text-[#5c3d3d]/70">weds</span>
+              <span className="block text-xl sm:text-2xl text-[#8b4a4a]">Chi. Dilip Kumar</span>
+            </p>
+
+            <p className="text-xs sm:text-sm text-[#5c3d3d]/70 leading-relaxed">
+              Cordially invite you to join us in celebrating their wedding
+            </p>
+
+            {/* Date */}
+            <p className="text-sm sm:text-lg font-serif text-[#8b4a4a]">
+              Friday, 24th October 2025
+              <br />
+              at 11:23 AM
+            </p>
+
+            {/* Venue */}
+            <p className="text-xs sm:text-sm text-[#5c3d3d]/70">
+              K.K.R. Function Hall
+              <br />
+              Venkateshwara Temple Road, Uppal,
+              <br />
+              Medchal-Malkajgiri Dist.
+            </p>
+          </div>
+
+          <div className="h-px bg-gradient-to-r from-transparent via-[#8b4a4a] to-transparent my-6"></div>
+
+          {/* Reception */}
+          <div className="text-center text-xs sm:text-sm text-[#5c3d3d]/60 space-y-1">
+            <p>Reception: On 26th October 2025, 07:00 PM onwards</p>
+            <p>At RAMAIAH Function Hall, Pothuna Nagar,Ramannapet, Warangal</p>
+          </div>
 
           {/* Footer */}
-          <div className="text-center text-xs text-foreground/60 space-y-2">
-            <p>Reception to follow</p>
-            <p>Black Tie Optional</p>
-          </div>
-
-          {/* Decorative Corners */}
-          <div className="mt-8 text-center text-2xl text-accent/30">✦ ✦ ✦</div>
+          <div className="mt-6 text-center text-lg sm:text-2xl text-[#8b4a4a]/30">✦ ✦ ✦</div>
         </div>
       </div>
     </section>
